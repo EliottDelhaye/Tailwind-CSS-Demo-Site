@@ -1,0 +1,12 @@
+# Fichiers spécifiques au système d'exploitation
+.DS_Store
+Thumbs.db
+
+# Dossiers de dépendances
+node_modules/
+
+# Fichiers de configuration locaux
+.env
+
+# Fichiers et dossiers de build
+dist/
