@@ -7,6 +7,3 @@ node_modules/
 
 # Fichiers de configuration locaux
 .env
-
-# Fichiers et dossiers de build
-dist/
