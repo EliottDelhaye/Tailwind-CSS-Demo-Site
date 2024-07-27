@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark mode</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="bg-gray-800 text-white">
+    <a
+      class="absolute left-4 top-3 flex items-center px-4 py-2 font-semibold"
+      href="../../.."
+    >
+      <span class="text-md">&#8678;</span>
+    </a>
+    
+    <h1 class="font-medium text-6xl text-center pt-20 pb-10">Modifiers</h1>
+
+    <nav class="flex flex-wrap justify-center w-100 mb-5">
+      <a
+        class="flex-shrink-0 rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer"
+        href="./1.Animations Transitions.html"
+        >Animations / Transitions</a
+      >
+      <a
+        class="flex-shrink-0 rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer"
+        href="./2.DarkMode.html"
+        >Dark Mode</a
+      >
+      <a
+        class="flex-shrink-0 rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer"
+        href="./3.Modifiers.html"
+        >Modifiers</a
+      >
+    </nav>
+
+    <hr />
+    <!-- Contenu de la leçon -->
+
+    <div class="container mx-auto pb-60 px-4">
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">
+        Les pseudos-classes
+      </h2>
+
+      <!-- 
+        [hover + : + xxx] Survol 
+        [active + : + xxx] Active 
+        [focus + : + xxx] Focus 
+        etc ...
+       -->
+
+      <div class="active:bg-yellow-300 w-20 h-20 bg-blue-400 mt-2"></div>
+      <div class="hover:bg-yellow-300 w-20 h-20 bg-blue-400 mt-2"></div>
+      <p class="focus:bg-yellow-300 w-20 h-20 bg-blue-400 mt-2">test</p>
+      <a href="#" class="visited:bg-yellow-300 w-20 h-20 bg-blue-400 mt-2"
+        >Lien</a
+      >
+      <a href="#" class="link:bg-yellow-300 w-20 h-20 bg-blue-400 mt-2">Lien</a>
+      <input
+        type="text"
+        class="checked:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2"
+      />
+      <input
+        type="text"
+        class="disabled:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2"
+      />
+      <input
+        type="text"
+        class="enabled:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2"
+      />
+      <input
+        type="text"
+        class="empty:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2"
+      />
+      <input
+        type="text"
+        class="first-child:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2"
+      />
+      <input
+        type="text"
+        class="last-child:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2"
+      />
+      <input
+        type="text"
+        class="only-child:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2"
+      />
+      <input
+        type="text"
+        class="nth-child:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2"
+      />
+      <input
+        type="text"
+        class="nth-last-child:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2"
+      />
+      <input
+        type="text"
+        class="nth-of-type:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2"
+      />
+
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">
+        Styliser en fonction du parent
+      </h2>
+
+      <!-- [group] sur le parent -->
+      <!-- [group-hover + : + bg-red-400] sur l'enfant -->
+      <div class="group flex w-50 h-50 bg-amber-400 p-16">
+        <div class="group-hover:bg-lime-700 w-20 h-20 bg-blue-400"></div>
+      </div>
+
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">
+        Highlight de texte
+      </h2>
+
+      <!-- [selection + : + couleur] -->
+
+      <p>Sélectionnez du texte pour voir le highlight :</p>
+      <br />
+      <div class="selection:bg-orange-600">
+        <p>
+          So I started to walk into the water. I won't lie to you boys, I was
+          terrified. But I pressed on, and as I made my way past the breakers a
+          strange calm came over me. I don't know if it was divine intervention
+          or the kinship of all living things but I tell you Jerry at that
+          moment, I <em>was</em> a marine biologist.
+        </p>
+      </div>
+
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">
+        Les pseudos-élements
+      </h2>
+
+      <p>
+        On utilise le modifier [after:] ou [before:], puis on rajoute toutes les
+        classes qu'on veut :
+      </p>
+      <p>Ici le carré rouge est un pseudo-élément after: ajouté à un h1</p>
+      <br />
+      <h1
+        class="after:content-[''] after:w-40 after:h-40 after:bg-red-400 after:block"
+      >
+        Lorem ipsum dolor sit amet.
+      </h1>
+
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">
+        On peut même utiliser les filters
+      </h2>
+
+      <!-- [sepia|contrast-(0/200)|drop-shadow-(sm/2xl)|invert|hue-rotate(0/180)] -->
+
+      <div class="flex">
+        <img
+          src="../ressources/cat.jpg"
+          alt="cat"
+          class="w-40 object-contain"
+        />
+        <img
+          src="../ressources/cat.jpg"
+          alt="cat"
+          class="sepia w-40 object-contain"
+        />
+        <img
+          src="../ressources/cat.jpg"
+          alt="cat"
+          class="contrast-200 w-40 object-contain"
+        />
+        <img
+          src="../ressources/cat.jpg"
+          alt="cat"
+          class="drop-shadow-sm w-40 object-contain"
+        />
+        <img
+          src="../ressources/cat.jpg"
+          alt="cat"
+          class="drop-shadow-2xl w-40 object-contain"
+        />
+        <img
+          src="../ressources/cat.jpg"
+          alt="cat"
+          class="invert w-40 object-contain"
+        />
+        <img
+          src="../ressources/cat.jpg"
+          alt="cat"
+          class="hue-rotate-180 w-40 object-contain"
+        />
+      </div>
+
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">
+        Styliser avec nth-child
+      </h2>
+
+      <!-- [(odd|even):] -->
+      <!-- [(first|last):] -->
+      <!-- [only:] -->
+
+      <p>Avec odd (impaire) :</p>
+      <ul>
+        <li class="odd:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">1</li>
+        <li class="odd:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">2</li>
+        <li class="odd:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">3</li>
+        <li class="odd:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">4</li>
+        <li class="odd:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">5</li>
+      </ul>
+
+      <p>Avec even (paire) :</p>
+      <ul>
+        <li class="even:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">1</li>
+        <li class="even:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">2</li>
+        <li class="even:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">3</li>
+        <li class="even:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">4</li>
+        <li class="even:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">5</li>
+      </ul>
+
+      <p>Avec first :</p>
+      <ul>
+        <li class="first:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">1</li>
+        <li class="first:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">2</li>
+        <li class="first:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">3</li>
+        <li class="first:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">4</li>
+        <li class="first:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">5</li>
+      </ul>
+
+      <p>Avec last :</p>
+      <ul>
+        <li class="last:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">1</li>
+        <li class="last:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">2</li>
+        <li class="last:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">3</li>
+        <li class="last:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">4</li>
+        <li class="last:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">5</li>
+      </ul>
+
+      <p>Avec only (stylise seulement un élément enfant) :</p>
+      <ul>
+        <li class="only:bg-yellow-300 w-20 h-10 bg-blue-400 mt-2">1</li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typographie</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../../dist/output.css" />
+  </head>
+  <body class="bg-gray-800 text-white">
+    <a
+      class="absolute left-4 top-3 flex items-center px-4 py-2 font-semibold bg-gradient-to-r from-slate-300 to-zinc-300 text-gray-800 rounded-sm shadow-sm"
+      href="../../index.html"
+    >
+      <span class="text-md">&#8678;</span>
+    </a>
+
+    <h1 class="font-medium text-6xl text-center pt-20 pb-10">La Typographie</h1>
+
+    <hr />
+    <!-- Contenu de la leçon -->
+
+    <div class="container mx-auto pb-60 px-4">
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Font-Size</h2>
+      <!-- [text-(xs|sm|base|lg|xl|2xl-9xl)]-->
+
+      <p class="text-xs">text-xs</p>
+      <p class="text-sm">text-sm</p>
+      <p class="text-base">text-base</p>
+      <p class="text-lg">text-lg</p>
+      <p class="text-xl">text-xl</p>
+      <p class="text-2xl">text-2xl</p>
+      <p class="text-3xl">text-3xl</p>
+      <p class="text-4xl">text-4xl</p>
+      <p class="text-5xl">text-5xl</p>
+      <p class="text-6xl">text-6xl</p>
+      <p class="text-7xl">text-7xl</p>
+      <p class="text-8xl">text-8xl</p>
+      <p class="text-9xl">text-9xl</p>
+
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Poids de la police</h2>
+      <!-- [font-(thin|extralight|light|normal|medieum|semibold|bold|extrabold|black)] -->
+      <p class="font-thin">font-thin (font-weight:100)</p>
+      <p class="font-extralight">font-extralight (font-weight:200)</p>
+      <p class="font-light">font-light (font-weight:300)</p>
+      <p class="font-normal">font-normal (font-weight:400)</p>
+      <p class="font-medium">font-medium (font-weight:500)</p>
+      <p class="font-semibold">font-semibold (font-weight:600)</p>
+      <p class="font-bold">font-bold (font-weight:700)</p>
+      <p class="font-extrabold">font-extrabold (font-weight:800)</p>
+      <p class="font-black">font-black (font-weight:900)</p>
+
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Font Family</h2>
+      <!-- [font-(sans|serif|mono) -->
+      <!-- Intégrer sa propre font puis utiliser une classe arbitraire [font-customFont] -->
+
+      <p class="font-sans">font-sans</p>
+      <p class="font-serif">font-serif</p>
+      <p class="font-mono">font-mono</p>
+      <p class="font-customFont">font-customFont</p>
+
+      <!-- Utiliser google font : -->
+      <!-- 1. Importer la font dans le fichier html dans le head
+      2. Utiliser la classe font-['Nom de la font']comme ci-dessous -->
+      <p class="font-['Abril_Fatface']">font-['Abril_Fatface']</p>
+
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">
+        Text Overflow / Break Words
+      </h2>
+      <!-- [truncate] -->
+      <!-- [break-words] -->
+      <p class="truncate w-40 h-40 bg-red-600">
+        truncate : Lorem ipsum dolor sit amet. loremloremloremloremloremlorem
+      </p>
+      <br />
+      <p class="break-words w-40 h-40 bg-red-600">
+        break-words : Lorem ipsum dolor sit amet. loremloremloremloremloremlorem
+      </p>
+    </div>
+  </body>
+</html>
