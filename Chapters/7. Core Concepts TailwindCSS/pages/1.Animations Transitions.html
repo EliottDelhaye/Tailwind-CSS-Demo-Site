@@ -1,50 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Concepts Tailwind</title>
-  <link rel="stylesheet" href="../dist/output.css">
-</head>
-<body class="bg-gray-800 text-white">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concepts Tailwind</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="bg-gray-800 text-white">
+    <a
+      class="absolute left-4 top-3 flex items-center px-4 py-2 font-semibold"
+      href="../../.."
+    >
+      <span class="text-md">&#8678;</span>
+    </a>
+    <h1 class="font-medium text-6xl text-center pt-20 pb-10">
+      Animations / Transitions
+    </h1>
 
-  <h1 class="font-medium text-6xl text-center pt-20 pb-10">Animations / Transitions</h1>
+    <nav class="flex flex-wrap justify-center w-100 mb-5">
+      <a
+        class="flex-shrink-0 rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer"
+        href="./1.Animations Transitions.html"
+        >Animations / Transitions</a
+      >
+      <a
+        class="flex-shrink-0 rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer"
+        href="./2.DarkMode.html"
+        >Dark Mode</a
+      >
+      <a
+        class="flex-shrink-0 rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer"
+        href="./3.Modifiers.html"
+        >Modifiers</a
+      >
+    </nav>
 
-  <nav class="flex flex-wrap justify-center w-100 mb-5">
-    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer" href="./1.Animations Transitions.html">Animations / Transitions</a>
-    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer"  href="./2.DarkMode.html">Dark Mode</a>
-    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer"  href="./3.Modifiers.html">Modifiers</a>
-  </nav>
+    <hr />
+    <!-- Contenu de la leçon -->
 
-    <hr>
-     <!-- Contenu de la leçon -->
+    <div class="container mx-auto pb-60 px-4 wiggle">
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
+      <h2
+        class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5 animate-fade"
+      >
+        Les animations
+      </h2>
 
-     <div class="container mx-auto pb-60 px-4 wiggle">
-
-      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5 animate-fade">Les animations </h2>
-    
       <!-- Spin : animate-spin -->
-      <div class="w-10 h-10 border-[5px] rounded-full	border-slate-200 border-r-indigo-900	 mt-10"></div>
-      
+      <div
+        class="animate-spin w-20 h-20 border-[5px] rounded-full border-slate-200 border-r-indigo-900 mt-10"
+      ></div>
+
       <!-- Ping : animate-ping -->
-      <div class="w-10 h-10 bg-slate-300 rounded-full	bg-blue-200 mt-10"></div>
+      <div
+        class="animate-ping w-20 h-20 bg-slate-300 rounded-full bg-blue-200 mt-10"
+      ></div>
 
       <!-- Pulse : animate-pulse -->
-      <div class="w-10 h-10 bg-slate-300 rounded-full	bg-blue-200 mt-10"></div>
+      <div
+        class="animate-pulse w-20 h-20 bg-slate-300 rounded-full bg-blue-200 mt-10"
+      ></div>
 
       <!-- Bounce : animate-bounce -->
-      <div class="w-10 h-10 bg-slate-300 rounded-full	bg-blue-200 mt-10"></div>
+      <div
+        class="animate-bounce w-20 h-20 bg-slate-300 rounded-full bg-blue-200 mt-10"
+      ></div>
 
-
-      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">Le Survol</h2>
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">
+        Le Survol
+      </h2>
       <!-- On utilise le "modifier" hover: pour animer ou changer de propriété au survol -->
 
-      <div class=" w-10 h-10 border-[5px] rounded-full	border-slate-200 border-r-indigo-900	 mt-10"></div>
+      <div
+        class="hover:animate-spin w-20 h-20 border-[5px] rounded-full border-slate-200 border-r-indigo-900 mt-10"
+      ></div>
 
-      
-      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">Les transitions</h2> 
+      <div
+        class="hover:bg-red-600 w-20 h-20 rounded-full bg-slate-200 mt-10"
+      ></div>
+
+      <div
+        class="hover:scale-150 w-20 h-20 rounded-full bg-slate-200 mt-10"
+      ></div>
+
+      <div
+        class="hover:translate-x-20 w-20 h-20 rounded-full bg-slate-200 mt-10"
+      ></div>
+
+      <div
+        class="hover:translate-y-20 w-20 h-20 rounded-full bg-slate-200 mt-10"
+      ></div>
+
+      <div
+        class="hover:rotate-45 w-20 h-20 border-[5px] rounded-full border-slate-200 border-r-indigo-900 mt-10"
+      ></div>
+
+      <div
+        class="hover:skew-x-12 w-20 h-20 border-[5px] rounded-full border-slate-200 border-r-indigo-900 mt-10"
+      ></div>
+
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">
+        Les transitions
+      </h2>
       <!-- On peut les transitions -->
       <!-- [transition] -->
       <!-- [duration-150|300|700] durée -->
@@ -55,9 +121,30 @@
           [transitions-shadow]
           [transitions-transform]
       -->
-      
-      <div class="bg-blue-500 w-10 h-10 border-[5px] rounded-full	border-slate-200 border-r-indigo-900	 mt-10"></div>
 
+      <div
+        class="transition duration-1000 ease-out hover:bg-yellow-400 w-20 h-20 rounded-full bg-slate-200 mt-10"
+      ></div>
+
+      <div
+        class="transition-transform duration-1000 ease-out hover:scale-150 hover:bg-red-600 w-20 h-20 rounded-full bg-slate-200 mt-10"
+      ></div>
+
+      <div
+        class="transition-transform duration-1000 ease-out hover:rotate-45 w-20 h-20 border-[5px] rounded-full border-slate-200 border-r-indigo-900 mt-10"
+      ></div>
+
+      <div
+        class="transition-transform duration-1000 ease-out hover:skew-x-12 w-20 h-20 border-[5px] rounded-full border-slate-200 border-r-indigo-900 mt-10"
+      ></div>
+
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">
+        Annimation personalisée grâce au tailwind.config.js :
+      </h2>
+      <div class="animate-fade w-20 h-20 rounded-full bg-slate-200 mt-10"></div>
     </div>
-</body>
+  </body>
 </html>

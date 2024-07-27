@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typographie</title>
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,6 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="../../dist/output.css" />
   </head>
   <body class="bg-gray-800 text-white">
     <a
@@ -29,6 +30,9 @@
     <!-- Contenu de la leçon -->
 
     <div class="container mx-auto pb-60 px-4">
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
       <h2 class="text-4xl text-gray-50 pt-10 pb-5">Font-Size</h2>
       <!-- [text-(xs|sm|base|lg|xl|2xl-9xl)]-->
 
@@ -46,6 +50,9 @@
       <p class="text-8xl">text-8xl</p>
       <p class="text-9xl">text-9xl</p>
 
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
       <h2 class="text-4xl text-gray-50 pt-10 pb-5">Poids de la police</h2>
       <!-- [font-(thin|extralight|light|normal|medieum|semibold|bold|extrabold|black)] -->
       <p class="font-thin">font-thin (font-weight:100)</p>
@@ -58,6 +65,9 @@
       <p class="font-extrabold">font-extrabold (font-weight:800)</p>
       <p class="font-black">font-black (font-weight:900)</p>
 
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
       <h2 class="text-4xl text-gray-50 pt-10 pb-5">Font Family</h2>
       <!-- [font-(sans|serif|mono) -->
       <!-- Intégrer sa propre font puis utiliser une classe arbitraire [font-customFont] -->
@@ -72,6 +82,9 @@
       2. Utiliser la classe font-['Nom de la font']comme ci-dessous -->
       <p class="font-['Abril_Fatface']">font-['Abril_Fatface']</p>
 
+      <!-- ==================================================================================
+      ==================================================================================
+      ================================================================================== -->
       <h2 class="text-4xl text-gray-50 pt-10 pb-5">
         Text Overflow / Break Words
       </h2>
@@ -80,7 +93,7 @@
       <p class="truncate w-40 h-40 bg-red-600">
         truncate : Lorem ipsum dolor sit amet. loremloremloremloremloremlorem
       </p>
-      <br>
+      <br />
       <p class="break-words w-40 h-40 bg-red-600">
         break-words : Lorem ipsum dolor sit amet. loremloremloremloremloremlorem
       </p>

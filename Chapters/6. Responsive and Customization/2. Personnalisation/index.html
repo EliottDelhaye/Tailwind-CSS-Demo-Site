@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personnalisation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./dist/output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-bleu-nuit-1500 text-white">
-
-    <h1 class="font-medium font-open-sans text-clamp-lg text-center pt-20 pb-10">
+  <body class="bg-gray-800 text-white">
+    <a
+      class="absolute left-4 top-3 flex items-center px-4 py-2 font-semibold bg-gradient-to-r from-slate-300 to-zinc-300 text-gray-800 rounded-sm shadow-sm"
+      href="../../../"
+    >
+      <span class="text-md">&#8678;</span>
+    </a>
+    <h1
+      class="font-medium font-open-sans text-clamp-lg text-center pt-20 pb-10"
+    >
       Personnalisation
     </h1>
 
@@ -35,8 +45,49 @@
 
     <div class="container mx-auto pb-60 px-4">
       <h2 class="text-4xl text-gray-50 pt-10 pb-5">La Personnalisation</h2>
-
-
     </div>
+
+    <h3>
+      Avec @apply on peut utiliser la syntaxe de tailwind dans un fichier css
+      (ici @apply text-2xl text-sky-600;)
+    </h3>
+    <p class="custom-class">custom-class</p>
+    <button class="btn">composants personnalisés</button>
+
+    <div class="bg-orange">Nouvelle couleur personnalisée : orange</div>
+
+    <div class="bg-bleu-nuit-700">
+      Nouvelle couleur personnalisée : bg-bleu-nuit-700
+    </div>
+    <div class="bg-bleu-nuit-800">
+      Nouvelle couleur personnalisée : bg-bleu-nuit-800
+    </div>
+    <div class="bg-bleu-nuit-15000">
+      Nouvelle couleur personnalisée : bg-bleu-nuit-15000
+    </div>
+
+    <p class="font-custom">Text avec la nouvelle fontFamily "custom"</p>
+
+    <p class="text-clamp-sm">
+      Text avec la nouvelle classe "text-clamp-sm" qui s'ajuuste en fonction de
+      la taille de l'écran.
+    </p>
+    <p class="text-clamp-md">
+      Text avec la nouvelle classe "text-clamp-md" qui s'ajuuste en fonction de
+      la taille de l'écran.
+    </p>
+    <p class="text-clamp-lg">
+      Text avec la nouvelle classe "text-clamp-lg" qui s'ajuuste en fonction de
+      la taille de l'écran.
+    </p>
+
+    <br>
+    <h2>Utiliser des plugin, par exemple pour styliser des éléments :</h2>
+    <input class="text-black" type="text" />
+    <select class="text-black">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
   </body>
 </html>
